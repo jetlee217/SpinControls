@@ -30,7 +30,7 @@ namespace WpfApplication1 {
                     if (o is Control) {
                         Control c = (Control)o;
                         if (!(c is System.Windows.Controls.Primitives.StatusBar)) {
-                            c.RenderTransform = new RotateTransform(iAngle == 360 ? 0 : r.Next(iAngle), c.Width / 2, c.Height / 2);
+                            c.RenderTransform = new RotateTransform(iAngle, c.Width / 2, c.Height / 2);
                         }
                     }
                 }
