@@ -24,7 +24,7 @@ namespace WpfApplication1 {
 
         private void button3_Click(object sender, RoutedEventArgs e) {
             Random r = new Random(DateTime.Now.Second);
-            for (double dAngle = 0; dAngle <= 360; dAngle += 0.1) {
+            for (double dAngle = 0; dAngle <= 360; dAngle += 0.2) {
                 //grdMainGrid.RenderTransform = new RotateTransform(iAngle == 360 ? 0 : r.Next(iAngle), grdMainGrid.Width / 2, grdMainGrid.Height / 2);
                 foreach (object o in grdMainGrid.Children) {
                     if (o is Control) {
