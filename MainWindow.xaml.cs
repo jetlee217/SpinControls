@@ -24,13 +24,13 @@ namespace WpfApplication1 {
 
         private void button3_Click(object sender, RoutedEventArgs e) {
             Random r = new Random(DateTime.Now.Second);
-            for (int iAngle = 0; iAngle <= 360; iAngle += 1) {
+            for (double dAngle = 0; dAngle <= 360; dAngle += 0.1) {
                 //grdMainGrid.RenderTransform = new RotateTransform(iAngle == 360 ? 0 : r.Next(iAngle), grdMainGrid.Width / 2, grdMainGrid.Height / 2);
                 foreach (object o in grdMainGrid.Children) {
                     if (o is Control) {
                         Control c = (Control)o;
                         if (!(c is System.Windows.Controls.Primitives.StatusBar)) {
-                            c.RenderTransform = new RotateTransform(iAngle, c.Width / 2, c.Height / 2);
+                            c.RenderTransform = new RotateTransform(dAngle, c.Width / 2, c.Height / 2);
                         }
                     }
                 }
