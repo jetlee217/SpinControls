@@ -35,7 +35,7 @@ namespace WpfApplication1 {
                     }
                 }
                 this.Refresh();
-                System.Threading.Thread.Sleep(0);
+                System.Threading.Thread.Sleep(1);
             }
         }
 
